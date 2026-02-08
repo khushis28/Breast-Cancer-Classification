@@ -75,9 +75,11 @@ Prediction & Probability Score
      ↓
 PDF Diagnostic Report Generation
 
+---
 
-## How to Run
-1. Install dependencies
-2. Train model using `train.py`
-3. Run app using `app.py`
-4. Upload image and get result
+## 🚀 How to Run (Quick Steps)
+
+1. **Install dependencies**
+2. **Train model using `train.py`**
+3. **Run app using `app.py`**
+4. **Upload image and get result**
