@@ -1,43 +1,81 @@
-# Breast-Cancer-Classification
-A deep learning framework using VGG16 Transfer Learning to classify breast ultrasound images as benign or malignant with 98.5% accuracy. Features an intuitive Gradio web interface and automated PDF report generation for real-time clinical decision support. Designed for high efficiency and reliability.
+# 🩺 Breast Cancer Classification using Deep Learning
 
-# Key Features
-# Transfer Learning: 
-Uses pre-trained ImageNet weights to reduce training time to under 5 minutes.
-# High Performance: 
-Achieves superior results compared to ResNet50 and DenseNet121.
-# Clinical Tools: 
-Integrated Gradio UI for easy image uploads and ReportLab for generating expert diagnostic reports.
-# Fast Inference: 
-Processes individual images in approximately 0.5 seconds.
-# Model Performance
-VGG16 (Accuracy - 98.5%, Precision - 0.91, Recall - 0.89, F1-Score - 0.90)
-ResNet50 (Accuracy - 96.1%, Precision - 0.95, Recall - 0.94, F1-Score - 0.94)
-DenseNet121 (Accuracy - 97.3%, Precision - 0.97, Recall - 0.96, F1-Score - 0.96)
-Note: (Results based on 10 epochs of training with an 80-20 dataset split )
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange)
+![Accuracy](https://img.shields.io/badge/Accuracy-98.5%25-brightgreen)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
 
-# System Workflow
-# Preprocessing: 
-Resizes images to 224 X 224 and normalizes pixel values to [0, 1].
-# Feature Extraction: 
-Leverages 13 frozen convolutional layers from the VGG16 architecture.
-# Classification: 
-Processes features through a custom head with 256 neurons and a 0.4 dropout rate to prevent overfitting.
-# Output: 
-Generates a malignancy probability score and an automated PDF report.
-# Requirements:
-TensorFlow / Keras 
-OpenCV
-Gradio
-ReportLab
-NumPy 
+A **deep learning-based medical imaging system** that uses **VGG16 Transfer Learning** to classify **breast ultrasound images** as **Benign** or **Malignant** with **98.5% accuracy**.  
+The project includes a **Gradio-based web interface** and **automated PDF report generation**, enabling real-time clinical decision support.
 
-# How to Run
-1. Install dependencies
-2. Train model using `train.py`
-3. Run app using `app.py`
-4. Upload image and get result
+---
 
-# Dataset
-Breast Ultrasound Images Dataset (Kaggle)
+## 📌 Table of Contents
+- [Project Overview](#-project-overview)
+- [Key Features](#-key-features)
+- [Model Performance](#-model-performance)
+- [System Workflow](#-system-workflow)
+- [Tech Stack](#-tech-stack)
+- [How to Run](#-how-to-run)
+- [Dataset](#-dataset)
+- [Project Highlights](#-project-highlights)
+- [Disclaimer](#-disclaimer)
 
+---
+
+## 🔍 Project Overview
+
+Breast cancer is one of the most common and life-threatening diseases among women worldwide.  
+Early and accurate diagnosis significantly increases survival rates.
+
+This project leverages **transfer learning** to build a **highly accurate, fast, and reliable** breast cancer classification system using **ultrasound images**, making it suitable for **clinical assistance and academic research**.
+
+---
+
+## ✨ Key Features
+
+### 🔁 Transfer Learning
+- Uses **VGG16 pre-trained on ImageNet**
+- Training completes in **under 5 minutes**
+
+### 📊 High Accuracy
+- Achieves **98.5% accuracy**
+- Outperforms **ResNet50** and **DenseNet121**
+
+### 🧑‍⚕️ Clinical Support Tools
+- **Gradio Web Interface** for easy image upload
+- **Automated PDF Diagnostic Report** using ReportLab
+
+### ⚡ Fast Inference
+- Predicts results in **~0.5 seconds per image**
+
+---
+
+## 📈 Model Performance
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+|------|---------|-----------|--------|----------|
+| **VGG16** | **98.5%** | 0.91 | 0.89 | 0.90 |
+| ResNet50 | 96.1% | 0.95 | 0.94 | 0.94 |
+| DenseNet121 | 97.3% | 0.97 | 0.96 | 0.96 |
+
+> 📝 **Note:**  
+> All models were trained for **10 epochs** using an **80:20 train-test split**.
+
+---
+
+## 🧠 System Workflow
+
+```text
+Image Upload
+     ↓
+Image Preprocessing
+     ↓
+VGG16 Feature Extraction
+     ↓
+Custom Classification Head
+     ↓
+Prediction & Probability Score
+     ↓
+PDF Diagnostic Report Generation
