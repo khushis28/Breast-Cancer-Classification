@@ -16,12 +16,7 @@ The project includes a **Gradio-based web interface** and **automated PDF report
 - [Key Features](#-key-features)
 - [Model Performance](#-model-performance)
 - [System Workflow](#-system-workflow)
-- [Tech Stack](#-tech-stack)
 - [How to Run](#-how-to-run)
-- [Dataset](#-dataset)
-- [Project Highlights](#-project-highlights)
-- [Disclaimer](#-disclaimer)
-
 ---
 
 ## 🔍 Project Overview
@@ -79,3 +74,10 @@ Custom Classification Head
 Prediction & Probability Score
      ↓
 PDF Diagnostic Report Generation
+
+
+## How to Run
+1. Install dependencies
+2. Train model using `train.py`
+3. Run app using `app.py`
+4. Upload image and get result
