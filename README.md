@@ -16,7 +16,7 @@ The project includes a **Gradio-based web interface** and **automated PDF report
 - [Key Features](#-key-features)
 - [Model Performance](#-model-performance)
 - [System Workflow](#-system-workflow)
-- [How to Run](#-how-to-run)
+
 ---
 
 ## 🔍 Project Overview
@@ -77,9 +77,9 @@ PDF Diagnostic Report Generation
 
 ---
 
-## 🚀 How to Run (Quick Steps)
+🚀 How to Run (Quick Steps)
 
-1. **Install dependencies**
-2. **Train model using `train.py`**
-3. **Run app using `app.py`**
-4. **Upload image and get result**
+1. Install dependencies
+2. Train model using `train.py`
+3. Run app using `app.py`
+4. Upload image and get result
