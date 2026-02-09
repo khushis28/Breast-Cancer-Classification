@@ -1,0 +1,9 @@
+
+numpy
+scikit-learn
+opencv-python
+tensorflow
+keras
+gradio
+reportlab
+

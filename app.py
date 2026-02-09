@@ -35,6 +35,7 @@ def predict(img):
 
     return f"{label} ({confidence:.2f})", pdf_path
 
+
 # ================= CUSTOM CSS =================
 custom_css = """
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -723,5 +724,6 @@ with gr.Blocks(css=custom_css, title="MedAI - AI-Powered Diagnostics") as demo:
         </div>
     </div>
     """)
-
+if __name__ == "__main__":
+    demo.launch(server_name="0.0.0.0", server_port=7860)
 demo.launch()
